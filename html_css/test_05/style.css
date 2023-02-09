@@ -1,0 +1,93 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header,
+aside,
+section {
+  height: 100px;
+  padding: 20px;
+  background-color: lightblue;
+  font-size: 2rem;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightcoral;
+  height: 100%;
+  width: 15%;
+}
+
+header,
+section {
+  width: calc(100% - 15%);
+  left: 15%;
+}
+
+header {
+  background-color: lightslategray;
+}
+
+section {
+  height: calc(100% - 100px);
+}
+
+.goal-set {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.goal-card {
+  height: 150px;
+  width: 300px;
+  padding: 20px;
+
+  background-color: lightsalmon;
+}
+
+.small-graph-set {
+  /* border: 1px solid black; */
+  height: 350px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.small-graph-card {
+  height: 100%;
+  width: 100px;
+  padding: 20px;
+
+  background-color: lightgreen;
+}
+
+.small-graph-card:nth-child(1) {
+  flex: 2;
+}
+.small-graph-card:nth-child(2) {
+  flex: 2;
+}
+.small-graph-card:nth-child(3) {
+  flex: 1;
+}
+
+.large-graph-set {
+  height: 500px;
+  padding: 20px;
+  background-color: lightyellow;
+}
